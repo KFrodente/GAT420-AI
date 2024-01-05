@@ -22,7 +22,6 @@ void Cells::Step()
 			uint8_t color = v;
 			return v ? (color << 24 | color << 16 | color << 8 | 0xff) : 0;
 		});
-	//casdf
 	// copy color buffer to texture
 	texture->Copy(color_buffer);
 }
